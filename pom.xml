@@ -61,8 +61,13 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
-			<version>1.5.12.RELEASE</version>
 		</dependency>
+		<dependency>
+			<groupId>com.qiniu</groupId>
+			<artifactId>qiniu-java-sdk</artifactId>
+			<version>7.2.12</version>
+		</dependency>
+
 
 	</dependencies>
 

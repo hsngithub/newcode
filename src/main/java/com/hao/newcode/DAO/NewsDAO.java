@@ -4,9 +4,10 @@ import com.hao.newcode.Model.News;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
-
+@Component
 @Mapper
 public interface NewsDAO {
 	String TABLE_NAME="news";

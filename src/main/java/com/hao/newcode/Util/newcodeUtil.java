@@ -59,4 +59,14 @@ public class newcodeUtil {
 			return null;
 		}
 	}
+	public static String newcode_DOMAIN="http://127.0.0.1:8080/";
+	public static String IMAGE_DIR="D:/newcode/image/";
+	public static boolean isFileAllowed(String fileExt){
+		String[] AllowFormate=new String[]{"jpg","jpeg","png","bmp"};
+		for(String ext:AllowFormate){
+			if(ext.equals(fileExt))
+				return true;
+		}
+		return false;
+	}
 }

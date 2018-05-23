@@ -12,7 +12,7 @@ import java.util.List;
 public interface LoginTicketDAO {
 	String TABLE_NAME="LoginTicket";
 	String INSERT_FIELDS="user_id,expired,status,ticket";
-	String SELECT="id"+INSERT_FIELDS;
+	String SELECT="id,"+INSERT_FIELDS;
 	@Insert({"insert into",TABLE_NAME,"(",INSERT_FIELDS,
 			") values(#{userId},#{expired},#{status},#{ticket})"})
 	int addTicket(LoginTicket ticket);

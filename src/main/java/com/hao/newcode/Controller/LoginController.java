@@ -23,7 +23,7 @@ public class LoginController {
 	@ResponseBody
 	public String reg(Model model, @RequestParam("username") String username,
 						@RequestParam("password") String password,
-						@RequestParam("remberme") int rember,
+						@RequestParam(value = "rember",defaultValue = "0") int rember,
 						HttpServletResponse response){
 		try{
 			Map<String, Object> objectMap = userService.register(username, password);
